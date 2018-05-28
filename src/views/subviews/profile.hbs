@@ -76,7 +76,7 @@
                                 <div>
                                     <h6 style="padding: 0 0 0 15px; margin: 15px 0 0 0; font-size: 16px; line-height: 14px;">User Information</h6>
                                     <h5 style="padding: 0 0 10px 15px; margin: 2px 0 0 0; font-size: 12px;" class="uk-text-muted">
-                                        Your profile information.
+                                        Suas informações de Perfil
                                     </h5>
                                 </div>
                                 <hr class="nomargin-top">
@@ -87,7 +87,7 @@
                                             <input id="aUsername" class="md-input md-input-width-medium" name="aUsername" type="text" disabled value="{{data.account.username}}" />
                                         </div>
                                         <div class="uk-margin-medium-bottom">
-                                            <label for="aFullname">Name</label>
+                                            <label for="aFullname">Nome</label>
                                             <input id="aFullname" class="md-input md-input-width-medium" name="aFullname" type="text" value="{{data.account.fullname}}" />
                                         </div>
                                         <div class="uk-margin-medium-bottom">
@@ -95,7 +95,7 @@
                                             <input id="aPass" class="md-input" name="aPass" type="password" />
                                         </div>
                                         <div class="uk-margin-medium-bottom">
-                                            <label for="aPassConfirm">Confirm Password</label>
+                                            <label for="aPassConfirm">Confirmar Password</label>
                                             <input id="aPassConfirm" class="md-input" name="aPassConfirm" type="password" />
                                         </div>
                                         <div class="uk-margin-medium-bottom">
@@ -121,12 +121,12 @@
                                     <button
                                             type="button"
                                             class="uk-float-right md-btn md-btn-small md-btn-danger md-btn-wave-light removeApiButton {{#unless data.account.accessToken}} hide {{/unless}}"
-                                            ng-click="removeApiKey($event)">Remove Token
+                                            ng-click="removeApiKey($event)">Remover Tokken
                                     </button>
                                     <button
                                             type="button"
                                             class="uk-float-right md-btn md-btn-small md-btn-success md-btn-wave-light generateApiButton {{#if data.account.accessToken}} hide {{/if}}"
-                                            ng-click="generateApiKey($event)">Generate Token
+                                            ng-click="generateApiKey($event)">Gerar Token
                                     </button>
                                 </div>
                                 <hr class="nomargin-top clear">

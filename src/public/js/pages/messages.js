@@ -51,7 +51,7 @@ define('pages/messages', [
                 var convoId = $li.attr('data-conversation-id');
                 switch(action.toLowerCase()) {
                     case "delete":
-                        UIKit.modal.confirm('Are you sure you want to delete this conversation?', function() {
+                        UIKit.modal.confirm('Você tem certeza que quer deletar?', function() {
                             //Confirm
                             deleteConversation(convoId);
                         }, function() {

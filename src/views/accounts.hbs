@@ -2,11 +2,11 @@
     <div id="__accounts-page" class="hide">{{data.page}}</div>
     <div class="accountContent" style="background: #f6f8fb;">
         <div class="uk-grid uk-grid-collapse page-title noshadow dt-borderBottom" style="padding-left: 24px;">
-            <p class="left uk-width-2-10">Accounts</p>
+            <p class="left uk-width-2-10">Contas</p>
             <div class="uk-width-8-10 right">
                 <div class="md-fab-wrapper">
                     <a class="md-fab md-fab-accent no-ajaxy" href="#" data-uk-modal="{target:'#accountCreateModal',bgclose:false}">
-                        <i class="material-icons" style="color: white;">add</i>
+                        <i class="material-icons" style="color: white;">Add</i>
                     </a>
                 </div>
                 <div class="uk-grid" data-uk-grid-margin>
@@ -14,13 +14,13 @@
                         <div class="uk-vertical-align">
                             <div class="uk-vertical-align-middle">
                                 <ul id="account_list_filter" class="uk-subnav uk-subnav-pill">
-                                    <li class="uk-active filter-all uk-margin-remove" data-uk-filter=""><a href="#" class="no-ajaxy">All</a>
+                                    <li class="uk-active filter-all uk-margin-remove" data-uk-filter=""><a href="#" class="no-ajaxy">Todos</a>
                                     </li>
-                                    <li class="uk-margin-remove" data-uk-filter="admin"><a href="#" class="no-ajaxy">Administrators</a>
+                                    <li class="uk-margin-remove" data-uk-filter="admin"><a href="#" class="no-ajaxy">Administradores</a>
                                     </li>
-                                    <li class="uk-margin-remove" data-uk-filter="mod"><a href="#" class="no-ajaxy">Moderators</a>
+                                    <li class="uk-margin-remove" data-uk-filter="mod"><a href="#" class="no-ajaxy">Moderadores</a>
                                     </li>
-                                    <li class="uk-margin-remove" data-uk-filter="user"><a href="#" class="no-ajaxy">Users</a>
+                                    <li class="uk-margin-remove" data-uk-filter="user"><a href="#" class="no-ajaxy">Usuarios</a>
                                     </li>
                                 </ul>
                             </div>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="uk-width-medium-1-2">
                         <div class="md-input-wrapper" style="margin-top: 10px;">
-                            <label for="account_list_search">Find Account</label>
+                            <label for="account_list_search">Encontrar conta</label>
                             <input type="text" class="md-input uk-margin-remove" id="account_list_search"/>
 
                             <div class="md-input-bar"></div>
@@ -52,11 +52,11 @@
 
                                         <div class="uk-dropdown uk-dropdown-small">
                                             <ul class="uk-nav">
-                                                <li><a href="#" class="no-ajaxy" data-username="{{username}}" ng-click="editAccount($event)">Edit</a></li>
+                                                <li><a href="#" class="no-ajaxy" data-username="{{username}}" ng-click="editAccount($event)">Editar</a></li>
                                                 <li><a href="#" data-username="{{username}}"
-                                                       ng-click="deleteAccount($event)" class="no-ajaxy delete-account-action {{#compare deleted '==' true}}hide{{/compare}}">Delete</a></li>
+                                                       ng-click="deleteAccount($event)" class="no-ajaxy delete-account-action {{#compare deleted '==' true}}hide{{/compare}}">Deletar</a></li>
                                                 <li><a href="#" data-username="{{username}}"
-                                                       ng-click="enableAccount($event)" class="no-ajaxy enable-account-action {{#compare deleted '==' false}}hide{{/compare}}">Enable</a></li>
+                                                       ng-click="enableAccount($event)" class="no-ajaxy enable-account-action {{#compare deleted '==' false}}hide{{/compare}}">Ativar</a></li>
 
                                             </ul>
                                         </div>
@@ -96,7 +96,7 @@
                                         </li>
                                         <li>
                                             <div class="tru-list-content">
-                                                <span class="tru-list-heading">Groups</span>
+                                                <span class="tru-list-heading">Grupo</span>
                                             <span class="uk-text-small uk-text-muted uk-text-truncate">
                                                 {{#each groups}}
                                                     {{this}}{{#compare (size ../groups) '>' 1}}, {{/compare}}

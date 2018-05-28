@@ -13,7 +13,7 @@
                 <!--&lt;!&ndash;</form>&ndash;&gt;-->
             <!--</div>-->
             <div class="uk-margin-medium-bottom">
-                <label for="aUsername">Username</label>
+                <label for="aUsername">Usuario</label>
                 <input type="text" class="md-input" id="caUsername" name="aUsername"
                     data-validation="length"
                        data-validation-length="min5"
@@ -21,7 +21,7 @@
                 />
             </div>
             <div class="uk-margin-medium-bottom">
-                <label for="aFullname">Name</label>
+                <label for="aFullname">Nome</label>
                 <input type="text" class="md-input" id="caFullname" name="aFullname"
                     data-validation="length"
                        data-validation-length="min4"
@@ -41,7 +41,7 @@
                     />
                 </div>
                 <div class="left" style="width: 50%;">
-                    <label for="aPassConfirm" class="uk-form-label">Confirm Password</label>
+                    <label for="aPassConfirm" class="uk-form-label">Confirmar Password</label>
                     <input type="password" class="md-input" id="caPassConfirm" name="aPassConfirm"
                         data-validation="confirmation"
                         data-validation-confirm="aPass"
@@ -65,13 +65,13 @@
                 </select>
             </div>
             <div class="uk-margin-medium-bottom">
-                <label for="aGrps" class="uk-form-label">Groups</label>
+                <label for="aGrps" class="uk-form-label">Grupo</label>
                 <select name="aGrps" id="caGrps" class="selectize-white" multiple data-md-selectize-inline data-md-selectize-bottom="true">
                     {{#each data.allGroups}}
                         <option value="{{_id}}">{{name}}</option>
                     {{/each}}
                 </select>
-                <span class="aGrps-error-message hide help-block uk-form-danger">Please select a group for this user.</span>
+                <span class="aGrps-error-message hide help-block uk-form-danger">Porfavor selecione o grupo do usuario</span>
             </div>
             <div class="uk-modal-footer uk-text-right">
                 <button type="button" class="md-btn md-btn-flat uk-modal-close">Close</button>

@@ -11,24 +11,24 @@
                                 <ul class="uk-nav">
                                     {{#canUser data.user "notices:create"}}
                                         <li>
-                                            <a href="/notices/create" role="button">Create</a>
+                                            <a href="/notices/create" role="button">Criar</a>
                                         </li>
                                         <li>
                                             <hr style="margin: 5px 0;">
                                         </li>
                                     {{/canUser}}
                                     <li>
-                                        <a href="#" class="no-ajaxy" role="button" ng-click="activateNotice()">Activate</a>
+                                        <a href="#" class="no-ajaxy" role="button" ng-click="activateNotice()">Ativar</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="no-ajaxy" role="button" ng-click="clearNotice()">Deactivate</a>
+                                        <a href="#" class="no-ajaxy" role="button" ng-click="clearNotice()">Desativar</a>
                                     </li>
                                     {{#canUser data.user "notices:delete"}}
                                         <li>
                                             <hr style="margin: 5px 0;">
                                         </li>
                                         <li>
-                                            <a href="#" class="no-ajaxy" role="button" ng-click="deleteNotices()" style="color: red;">Delete</a>
+                                            <a href="#" class="no-ajaxy" role="button" ng-click="deleteNotices()" style="color: red;">Excluir</a>
                                         </li>
                                     {{/canUser}}
                                 </ul>
@@ -46,9 +46,9 @@
                 <thead>
                 <tr>
                     <th></th>
-                    <th>Name</th>
-                    <th>Message</th>
-                    <th>Date</th>
+                    <th>Nome</th>
+                    <th>Mensagem</th>
+                    <th>Data</th>
                     <th></th>
                 </tr>
                 </thead>

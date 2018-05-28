@@ -18,11 +18,11 @@
                 </div>
             </div>
             <div class="uk-margin-medium-bottom uk-clearfix">
-                <span class="uk-text-danger">WARNING: This will change all tickets with type: <strong>{{data.tickettype.name}}</strong> to the selected ticket type above. <br /><strong>This is permanent!</strong></span>
+                <span class="uk-text-danger">ATENÇÃO: Isso será aplicado para todos os tickets <strong>{{data.tickettype.name}}</strong> para o tipo de ticket selecionado acima. <br /><strong>This is permanent!</strong></span>
             </div>
             <div class="uk-modal-footer uk-text-right">
-                <button type="button" class="md-btn md-btn-flat uk-modal-close">Cancel</button>
-                <button type="button" class="md-btn md-btn-flat md-btn-flat-danger" id="submitDeleteTicketType" ng-click="submitDeleteTicketType('{{data.tickettype._id}}', $event)">Delete</button>
+                <button type="button" class="md-btn md-btn-flat uk-modal-close">Cancelar</button>
+                <button type="button" class="md-btn md-btn-flat md-btn-flat-danger" id="submitDeleteTicketType" ng-click="submitDeleteTicketType('{{data.tickettype._id}}', $event)">Deletar</button>
             </div>
         </form>
     </div>

@@ -39,7 +39,7 @@ describe('sessions', function() {
             .end(function(err, res) {
                 expect(err).to.not.exist;
                 expect(res.status).to.equal(200);
-                expect(res.text).to.include('<title>Trudesk &middot; Dashboard</title>');
+                expect(res.text).to.include('<title>Allmatech &middot; Dashboard</title>');
 
                 done();
             });
@@ -50,7 +50,7 @@ describe('sessions', function() {
             .end(function(err, res) {
                 expect(err).to.not.exist;
                 expect(res.status).to.equal(200);
-                expect(res.text).to.include('<title>Trudesk &middot; Login</title>');
+                expect(res.text).to.include('<title> Allmatech &middot; Login</title>');
 
                 done();
             });
@@ -61,7 +61,7 @@ describe('sessions', function() {
             .end(function(err, res) {
                 expect(err).to.not.exist;
                 expect(res.status).to.equal(200);
-                expect(res.text).to.include('<title>Trudesk &middot; Login</title>');
+                expect(res.text).to.include('<title>Allmatech &middot; Login</title>');
 
                 done();
             });
